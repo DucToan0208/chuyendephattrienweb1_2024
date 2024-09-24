@@ -3,7 +3,7 @@
     class B extends C {
 
         public function f() {
-        
+            // Implementation for f method
         }
 
         public function b1() {
