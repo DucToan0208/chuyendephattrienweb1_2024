@@ -18,6 +18,7 @@ table th {
   right: 20px;
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 .search-container input[type="text"] {
   padding: 8px;

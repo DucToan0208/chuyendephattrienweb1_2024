@@ -29,7 +29,7 @@ $less->compileFile('less/3217.less', 'css/3217.css');
     </head>
     <body>
     <h5>Main home > Forum</h5>
-    <br><br>
+    
 <div class="search-container">
   <input type="text" placeholder="Search...">
   <button type="submit">
