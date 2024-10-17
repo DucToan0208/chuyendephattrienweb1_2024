@@ -1,0 +1,96 @@
+@primary-color: hsl(195, 100%, 50%);
+@secondary-color: #F9B002;
+@white-color: #fff;
+@black-color: #333;
+@red-color: red;
+
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+header {
+  background-color: @primary-color;
+  padding: 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      position: relative;
+      padding: 10px;
+
+      a {
+        color: @white-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hop {
+  color: @white-color;
+  font: 16px Montserrat;
+  background: @secondary-color;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    .dropdown {
+      display: block;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: @white-color;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: @black-color;
+        text-decoration: none;
+
+        &:hover {
+          color: @secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.sale {
+  color: @red-color;
+}
+
+.new {
+  background-color: #f0f0f0;
+}

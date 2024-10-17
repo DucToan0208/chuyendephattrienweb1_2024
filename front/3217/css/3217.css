@@ -1,0 +1,40 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th,
+table td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+table th {
+  width: 25%;
+}
+.search-container {
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.search-container input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #dddddd;
+  outline: none;
+}
+.search-container button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.search-container button img {
+  width: 16px;
+  height: 16px;
+}
